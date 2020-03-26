@@ -1,8 +1,10 @@
- on:
+name: Auto-issuing
+
+on:
     schedule:
     # * is a special character in YAML so you have to quote this string
     - cron:  '* * * * *'
-
+    
 jobs:
   auto-create-issue:
     runs-on: ubuntu-latest
